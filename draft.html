@@ -6,19 +6,16 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
  
-    <a-marker preset='hiro'>
-   
-       <a-scene>
-           <a-assets>
-              <a-asset-item id="tree-obj-1"  src="https://github.com/AronShr/sweetpotato/minicar.obj"></a-asset-item>
-              <a-asset-item  id="tree-mtl-1" src="https://isl-web-res.s3.ap-south-1.amazonaws.com/augment/ar_assets/models/audi_ar/Audia4interior/audia4inter.mtl"></a-asset-item>
-                  
-             </a-assets>
-                 <a-entity obj-model="obj: #tree-obj-1; mtl: #tree-mtl-1" position="0 0 0" rotation="-90 0 -90" scale="0.1 0.1 0.1">
-                 </a-entity>
-             </a-assets>
+    <a-marker preset='hiro'>            
+<a-scene>
+  <a-assets>
+    <a-asset-item id="tree-obj" src="https://github.com/AronShr/sweetpotato/minicar.obj"></a-asset-item>
+    <a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item>
+  </a-assets>
 
-      </a-scene>
+  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+</a-scene>
+      
       
     </a-marker>
 
